@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    char t = 'A';
+    char *s = &t;
+    char **r = &s;
+    char ***q = &r;
+    char ****p = &q;
+    printf("*s:  %c\n", *s);
+    printf("**r:  %c\n", **r);
+    printf("***q:  %c\n", ***q);
+    printf("****p:  %c\n", ****p);
+    return 0;
+}
